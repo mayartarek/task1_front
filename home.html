@@ -4,11 +4,23 @@
 <head>
     <title>The Town </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <style>
         div {
             display: block;
@@ -30,7 +42,7 @@
         }
 
         .contact-img {
-            width: 100%;
+            width: auto;
             background-repeat: no-repeat;
             background-image: url(images/the-town-bg-02.jpg );
 
@@ -39,8 +51,8 @@
             background-size: cover;
             background-position: center center;
             padding: 120px;
-
-
+            height: auto;
+               
             text-align: center;
             position: relative;
 
@@ -86,6 +98,11 @@
             width: auto;
             height: auto;
         }
+        h6{
+            color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+        }
 
         h5 {
 
@@ -100,7 +117,7 @@
             color: white;
             font-weight: bold;
             font-size: 6opx;
-            margin-bottom: 50px;
+            margin-bottom: 37px;
 
 
         }
@@ -140,9 +157,9 @@
             display: block;
             size: 100px;
             margin-top: 20px;
-            color: white;
-
-            font-size: 70px;
+            color: white !important;
+                  
+            font-size: 60px;
             text-align: left;
         }
 
@@ -168,29 +185,181 @@
             width: 179px;
 
         }
-         span{
-             font-size: 40px;
-             margin-left: 12px;
-             
-         }     
-         a{
-             margin: 20px;
-             
-             background-color: transparent;
-             text-decoration: none;
-         }
-         span:hover,.contact-icon:hover i{
+
+        span {
+            font-size: 30px;
+            margin-left: 12px;
+            color: white !important;
+
+        }
+
+        a {
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            text-decoration: none;
+
+        }
+
+        a:hover,
+        span:hover,
+        contact-icon:hover {
             color: blue;
-         }
+        }
+
         .p-contact {
             text-align: start;
             font-size: 20px;
             color: aliceblue;
         }
-    </style>
+
+        form {
+            text-align: start;
+            padding: 10px;
+            display: relative;
+        }
+       
+
+        label {
+            font-size: 20px;
+            color: white;
+            padding: 20px;
+            margin-top: 7px;
+        }
+
+        textarea {
+            padding: 8px 25px;
+            margin-left: 31px;
+            overflow: scroll;
+        }
+
+        .button-submit {
+            margin-top: 15px;
+            margin-left: 36px;
+            text-align: center;
+            font-size: 16px;
+            color: black;
+            background-color: white;
+            border-radius: 10px;
+            border-radius: none;
+            padding: 10px;
+
+        }
+
+        footer {
+            position: absolute;
+            bottom: 35px;
+            left: 0;
+            right: 0;
+            padding: 0 15px;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+            margin: 41px 40px 178px;
+            transition: .5s ease;
+  backface-visibility: hidden;
+            
+        }
+        
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+       
+         .carousel-indecitor{
+             border-radius: 12px;
+             height: 10px;
+         }
+
+
+        .fir-navbar {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background-color: transparent;
+
+        }
+        .nav.scroll {
+            background-color: white;
+            position: fixed;
+            border: 1px solid grey;
+            color:black;
+        }
+
+        .btn-nav {
+            padding: .25rem .75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+        }
+
+        .a-nav {
+            font-size: 30px;
+            color: ivory
+            ;
+          
+    margin-left: -396px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    text-decoration: none;
+
+        }
+        .div-nav{
+            margin-left: 180px;
+        }
+        .div-nav-btn{
+          
+            font-size: 60px;
+            font-weight: bold;
+            color: ivory;
+
+        }
+        .btn-margin{
+            margin-right: 20px;
+        }
+        nav.scroll {
+            background-color: white;
+            position: fixed;
+            border: 1px solid grey;
+            color:black;
+        }
+
+        .nav.scroll .fir-navbar{
+            border:1px solid black;
+        }
+        .nav.scroll .btn-nav{
+            color: black;
+        }
+            </style>
 </head>
 
 <body>
+    <nav class="navbar fir-navbar nav.scroll ">
+        <div class="container " style="margin-left: 14px;">
+          <div class="div-nav">
+            <a href="" class="a-nav"> The Town</a></div>
+            <div class="div-nav-btn">
+            <button class="nav-item btn-nav btn-margin
+            ">Introduction</button>
+            <button class=" nav-item btn-nav btn-margin">Our Work</button>
+            <button class="nav-item btn-nav btn-margin">Contact Us
+           </div>
+            </button>
+        </div>
+    </nav>
 
     <section id="section-img">
         <h2 class="title">The Town</h2>
@@ -260,52 +429,165 @@
 
         </p>
     </div>
-    <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-            <div class="col-md-4">
-                <img src="images\gallery-img-01.jpg" class="img-grid">
-                <div>
-
-                </div>
-            </div>
+   <!-- <div class="container">
+       
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active carousel-indicator"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        
+        <div class="carousel-inner">
+          <div class="active   col-lg-4">
+            <img src="images/gallery-img-01.jpg" >
+          </div>
+    
+          <div class="active col-lg-4">
+            <img src="images/gallery-img-02.jpg">
+          </div>
+        
+          <div class="active col-lg-4">
+            <img src="images/gallery-img-03.jpg">
+          </div>
+          <div class="item col-lg-4">
+            <img src="images/gallery-img-04.jpg">
+          </div>
+          <div class="item col-lg-4">
+            <img src="images/gallery-img-05.jpg">
+          </div>
+          <div class="item col-lg-4">
+            <img src="images/gallery-img-06.jpg">
+          </div>
         </div>
-        <div class="col-md-4">
-            <img src="images\gallery-img-01.jpg" class="img-grid">
-            <div>
+    
 
-            </div>
-        </div>
-        <div class="col-md-4">
-            <img src="images\gallery-img-01.jpg" class="img-grid">
-            <div>
-
-            </div>
-        </div>
-        <div class="col-md-4">
-            <img src="images\gallery-img-01.jpg" class="img-grid">
-            <div>
-
-            </div>
-        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
-    <section class="contact-img">
-        <h1>Contact Us </h1>
-        <p class="p-contact">Nullam tincidunt, lacus a suscipit luctus, elit turpis tincidunt dui, non tempus sem turpis
-            vitae lorem. Maecenas eget odio in sapien ultrices viverra vitae vel leo. Curabitur at elit eu risus
-            pharetra pellentesque at at velit.
+  
+</div>-->
 
-        </p>
-        <div class="container">
-            <div class="col-lg-12">
 
-                <i class="fa fa-phone contact-icon" aria-hidden="true"></i>  <a href="tel:0103269"> <i class="fa fa-phone contact-icon" aria-hidden="true"></i><span>010215</span></i></a>
-                 
-                <a href="email:5@ex.com"> <i class="fa fa-phone contact-icon" aria-hidden="true"><span>info@company.com</span></i></a>
-            </div>
+
+<div class="container wrapper">
+  <div class="row">
+    <div class="col-12-xs child">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+  
+  <ol class="carousel-indicators hidden-xs">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+
+  </ol>
+
+  
+  <div class="carousel-inner hidden-xs" role="listbox">
+    <div class="item active">      
+      <div class="row">
+        <div class="col-sm-4">
+         
+            <img src="images/gallery-tn-01.jpg" >
+            <h6><i>Dreamy <span>Honey</span> Now</i></h6>
+                
         </div>
-    </section>
+        <div class="col-sm-4">
+            <img src="images/gallery-tn-02.jpg" >
+            <h6><i>Second <span>Honey</span> Now</i></h6>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/gallery-tn-03.jpg" >
+            <h6><i>Third <span>Honey</span> Now</i></h6>
+        </div>
+      </div>
+    </div>
+    <div class="item">      
+      <div class="row">
+        <div class="col-sm-4">
+            <img src="images/gallery-tn-04.jpg" >
+            <h6><i>Dreamy <span>Honey</span> Now</i></h6>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/gallery-tn-05.jpg" >
+            <h6><i>Dreamy <span>Honey</span> Now</i></h6>
+        </div>        
+        <div class="col-sm-4">
+            <img src="images/gallery-tn-06.jpg" >
+            <h6><i>Dreamy <span>Honey</span> Now</i></h6>
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    </div>
+  </div>
+</div>
+
+            <section class="contact-img">
+                <h1>Contact Us </h1>
+                <p class="p-contact">Nullam tincidunt, lacus a suscipit luctus, elit turpis tincidunt dui, non tempus
+                    sem turpis
+                    vitae lorem. Maecenas eget odio in sapien ultrices viverra vitae vel leo. Curabitur at elit eu risus
+                    pharetra pellentesque at at velit.
+
+                </p>
+                <div class="container" >
+                    <ul class="col-lg-6">
+                        <li>
+                            <a href="tel:0212">
+                                <i class="fa fa-phone contact-icon" aria-hidden="true"> </i>
+                                <span>01225</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto: abc@example.com">
+                                <i class="fa fa-envelope contact-icon" aria-hidden="true"> </i>
+                                <span>info@company.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="shorturl.at/hrM14">
+                                <i class="fa fa-map-marker contact-icon" aria-hidden="true"> </i>
+                                <span>Location on Maps</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <form class="col-lg-6">
+                        <label for="name">Name:</label>
+                        <input id='name' type="text">
+                        <br>
+                        <label for="Email">E-mail:</label>
+                        <input type="text" id="Email">
+                        <br>
+                        <textarea name="subscription" cols="30" rows="3"></textarea><br>
+                        <button type="submit" title="Submit" class="button-submit">Submit</button>
+                    </form>
+                </div>
+                <footer style="color: white;">Copyright © 2019 Company Name - Design: Template Mo</footer>
+            </section>
 
 
 </body>
+
 
 </html>
